@@ -254,10 +254,11 @@ h2, h3, h4, h5, h6 {
 
       width: 32%;
       min-width: 150px;
+      margin-bottom: 20px;
   
       .card-image {
 
-        padding: 40px 0;
+        
         img {
           width: 100%;
           max-width: 49px;
@@ -535,8 +536,8 @@ h2, h3, h4, h5, h6 {
       width: 32%;
 
       h4 {
-        margin-top: 10px;
-        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 44px;
       }
 
       .flex-row {
@@ -545,6 +546,8 @@ h2, h3, h4, h5, h6 {
 
         p {
           margin-bottom: 5px;
+          padding-left: 20px;
+          line-height: 150%;
         }
       }
     }
@@ -553,7 +556,8 @@ h2, h3, h4, h5, h6 {
       width: 32%;
 
       h4 {
-        margin-top: 10px;
+        margin-top: 20px;
+        margin-bottom: 44px;
       }
 
       form {
@@ -634,6 +638,79 @@ h2, h3, h4, h5, h6 {
     }
   }
 }
+@media (max-width: 915px) {
+  .container {
+    width: 85%;
+  }
+
+  .page-header {
+
+    .flex-container {
+      display: block; 
+      .brand-logo {
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+      
+      .nav-list {
+        width: 100%;
+        
+      }
+    }
+  }
+
+  .contact {
+  
+    .container {
+      
+
+      .form-block {
+        width: 100%; 
+        order: 2;
+        }
+        
+        .clients {
+          order: 1;
+          width: 100%;
+
+          .client-logos {
+
+            img {
+              margin: 20px 10px;
+            }
+          }
+  
+        }
+      }  
+  }
+
+  .page-footer {
+
+    .footer-contact {
+      flex-wrap: wrap;
+
+      .website-info {
+        width: 40%;
+      }
+
+      .website-address {
+        width: 40%;
+      }
+
+      .subscribe {
+        width: 100%;
+      }
+
+    }
+
+    .copyrights {
+
+      .copy-nav {
+        display: block;
+      }
+    }
+  }
+}
 
 @media screen and (max-width:500px) {
   html, body {
@@ -647,8 +724,13 @@ h2, h3, h4, h5, h6 {
   .page-header {
 
     .flex-container {
+      display: flex;
       flex-wrap: nowrap;
       
+      .brand-logo {
+        margin: 0;
+      }
+
       .nav-list {
         width:10%;
         justify-content: flex-end;
@@ -726,76 +808,3 @@ h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 800px) {
-  .container {
-    width: 85%;
-  }
-
-  .page-header {
-
-    .flex-container {
-      display: block; 
-      .brand-logo {
-        margin: 0 auto;
-        margin-bottom: 10px;
-      }
-      
-      .nav-list {
-        width: 100%;
-        
-      }
-    }
-  }
-
-  .contact {
-  
-    .container {
-      
-
-      .form-block {
-        width: 100%; 
-        order: 2;
-        }
-        
-        .clients {
-          order: 1;
-          width: 100%;
-
-          .client-logos {
-
-            img {
-              margin: 20px 10px;
-            }
-          }
-  
-        }
-      }  
-  }
-
-  .page-footer {
-
-    .footer-contact {
-      flex-wrap: wrap;
-
-      .website-info {
-        width: 40%;
-      }
-
-      .website-address {
-        width: 40%;
-      }
-
-      .subscribe {
-        width: 100%;
-      }
-
-    }
-
-    .copyrights {
-
-      .copy-nav {
-        display: block;
-      }
-    }
-  }
-}
