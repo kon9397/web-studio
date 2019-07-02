@@ -15,7 +15,6 @@ function testimonial() {
 
     slides.forEach(slide => {
         slide.style.height = maxHeight + 'px';
-        console.log(slide);
     });
 
     function nextSlide() {
