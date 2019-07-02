@@ -202,9 +202,7 @@ h6 {
 .technologies .flex-row .card {
   width: 32%;
   min-width: 150px;
-}
-.technologies .flex-row .card .card-image {
-  padding: 40px 0;
+  margin-bottom: 20px;
 }
 .technologies .flex-row .card .card-image img {
   width: 100%;
@@ -429,8 +427,8 @@ h6 {
   width: 32%;
 }
 .page-footer .footer-contact .website-address h4 {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 44px;
 }
 .page-footer .footer-contact .website-address .flex-row {
   display: flex;
@@ -438,12 +436,15 @@ h6 {
 }
 .page-footer .footer-contact .website-address .flex-row p {
   margin-bottom: 5px;
+  padding-left: 20px;
+  line-height: 150%;
 }
 .page-footer .footer-contact .subscribe {
   width: 32%;
 }
 .page-footer .footer-contact .subscribe h4 {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 44px;
 }
 .page-footer .footer-contact .subscribe form {
   display: flex;
@@ -505,6 +506,47 @@ h6 {
     width: 100%;
   }
 }
+@media (max-width: 915px) {
+  .container {
+    width: 85%;
+  }
+  .page-header .flex-container {
+    display: block;
+  }
+  .page-header .flex-container .brand-logo {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .page-header .flex-container .nav-list {
+    width: 100%;
+  }
+  .contact .container .form-block {
+    width: 100%;
+    order: 2;
+  }
+  .contact .container .clients {
+    order: 1;
+    width: 100%;
+  }
+  .contact .container .clients .client-logos img {
+    margin: 20px 10px;
+  }
+  .page-footer .footer-contact {
+    flex-wrap: wrap;
+  }
+  .page-footer .footer-contact .website-info {
+    width: 40%;
+  }
+  .page-footer .footer-contact .website-address {
+    width: 40%;
+  }
+  .page-footer .footer-contact .subscribe {
+    width: 100%;
+  }
+  .page-footer .copyrights .copy-nav {
+    display: block;
+  }
+}
 @media screen and (max-width: 500px) {
   html,
   body {
@@ -514,7 +556,11 @@ h6 {
     width: 90%;
   }
   .page-header .flex-container {
+    display: flex;
     flex-wrap: nowrap;
+  }
+  .page-header .flex-container .brand-logo {
+    margin: 0;
   }
   .page-header .flex-container .nav-list {
     width: 10%;
@@ -554,47 +600,6 @@ h6 {
   }
   .page-footer .footer-contact .website-address {
     width: 100%;
-  }
-  .page-footer .footer-contact .subscribe {
-    width: 100%;
-  }
-  .page-footer .copyrights .copy-nav {
-    display: block;
-  }
-}
-@media (max-width: 800px) {
-  .container {
-    width: 85%;
-  }
-  .page-header .flex-container {
-    display: block;
-  }
-  .page-header .flex-container .brand-logo {
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-  .page-header .flex-container .nav-list {
-    width: 100%;
-  }
-  .contact .container .form-block {
-    width: 100%;
-    order: 2;
-  }
-  .contact .container .clients {
-    order: 1;
-    width: 100%;
-  }
-  .contact .container .clients .client-logos img {
-    margin: 20px 10px;
-  }
-  .page-footer .footer-contact {
-    flex-wrap: wrap;
-  }
-  .page-footer .footer-contact .website-info {
-    width: 40%;
-  }
-  .page-footer .footer-contact .website-address {
-    width: 40%;
   }
   .page-footer .footer-contact .subscribe {
     width: 100%;
